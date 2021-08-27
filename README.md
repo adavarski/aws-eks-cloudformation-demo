@@ -2,8 +2,9 @@
 
 This is an example project to deploy and provisione an aws infrastructure using cloudformation and kubernetes (EKS) for development environments.
 
-Note: This project is only for development environments creation. 
-For production use repo: https://github.com/adavarski/aws-eks-production, because HashiCorp Terraform is better than AWS Cloudformation for AWS EKS setup/configuration/update/etc., (better state management & modularization & etc). If something goes wrong when using "aws cloudformation delete-stack/create-stack/update-stack ..." (exampe: DELETE_FAILED/CREATE_FAILED), we have to manually delete/fix resources via AWS console , which is very RISKY for production environments!
+Note1: This project is only for development environments creation. 
+
+Note2: For production use repo: https://github.com/adavarski/aws-eks-production, because HashiCorp Terraform is better than AWS Cloudformation for AWS EKS setup/configuration/update/etc., (better state management & modularization & etc). If something goes wrong when using "aws cloudformation delete-stack/create-stack/update-stack ..." (exampe: DELETE_FAILED/CREATE_FAILED), we have to manually delete/fix resources via AWS console, which is very RISKY for production environments!
 
 ---
 
