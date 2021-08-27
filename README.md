@@ -95,7 +95,10 @@ NAMESPACE     NAME                                DESIRED   CURRENT   READY   AG
 kube-system   replicaset.apps/coredns-85cc4f6d5   2         2         2       28m
 ```
 Screenshots:
-   
+
+- Stacks
+<img src="https://github.com/adavarski/aws-eks-cloudformation-demo/blob/main/images/eks-cluster-example1/CF-stacks.png?raw=true" width="900">
+ 
 - Clusters:  
 <img src="https://github.com/adavarski/aws-eks-cloudformation-demo/blob/main/images/eks-cluster-example1/AWS-EKS-Clusters.png?raw=true" width="900">
 - Cluster Overview:   
