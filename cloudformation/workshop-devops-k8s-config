@@ -1,0 +1,27 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeE1EZ3lOekV4TVRBMU9Gb1hEVE14TURneU5URXhNVEExT0Zvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBT1hkCmdJdmJpZUlueUJ6d3E4NGYxbGF1R096eVRGUHlXVFZZSitxOUpUSk9IcUNBRDNmUHk1U2lROExnNHg1eU1JdkYKQWd3NDlwbEtXdDhYS0dycWpLdFZkd2hmYmRtTFBHVjd2VTBSejJSRzlxdzVYSHB6TjNpV1EvUkxRcGZIbTlrVQoranpUK2E2bjN0TTF0Wk5qbWFCaU9HR1FDUk84R0gyQXJkQXFVQXMrSHg0akVFVjdCMUY2ZDFrdTlXaVUvb1haCjF2TWd2YUdNWnhtTHV0cWpqaFVvTm80L0xwTnFRQ0RZQURtQWxqaXkweEFTaUpQN2xJL1NNZEVBRURlTjhTZmIKamVDNGx1N3BKaFJ2Nm9rM2JIcmYzbmpmenAyajlkeFQ2My9NQk1hQ1EvOEZVRjI4MVlGOVFIRXJMYVRPNXQ2NQpQYy8xRWlRKzJGRzhJWFMweUxVQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZEdFhHK0R3SUtWV2JrNk82cjVKREFxb0tDd2xNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFDa09VdDY5ZnRBS0xwQU1rMmdlbm0wTVlHSkxhWWhkeEUvZG5rMlBMenkxbFNHd1pxbwppa0Q5cWpiam5rYjRSZnFIQURJL0htMml3djk0NnkyK1hVc0VjK2dHaFJqRFBaL2lzT1JwMTViMzVqT1U1UDBGCmlNZVhVSjN3WjN3d21Cc3pkRXB6aTJGVjVFbXhDWHJReElVdHQzcEY3cFhleE9kTGMwNXFhVDllKzVTOTFJWFcKb3NsWWYrK0RWQjZGTFBrUWJTekRVODBUT1YvbFFyZ1hiamovdkFNNkh0d3J6TnV0RzhIb2g4YjBVelZGWlBFbAowSHZkYUhOSGxFQnEvVytQcmNFTk9ULzA4Q3l5NGZOaGR6UVpWSXZBU3ZxY3dXaFdnNG1JYVlxczRueVRqNHJ5CjRxcjVqVnNSYWFybFJSMjZYYWRLZnozZ1JwQzYvZmxvTVoxdQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+    server: https://CD33CEF669519FAB78DC22AA0D562590.gr7.eu-central-1.eks.amazonaws.com
+  name: arn:aws:eks:eu-central-1:218645542363:cluster/DevOps-NonProd
+contexts:
+- context:
+    cluster: arn:aws:eks:eu-central-1:218645542363:cluster/DevOps-NonProd
+    user: arn:aws:eks:eu-central-1:218645542363:cluster/DevOps-NonProd
+  name: arn:aws:eks:eu-central-1:218645542363:cluster/DevOps-NonProd
+current-context: arn:aws:eks:eu-central-1:218645542363:cluster/DevOps-NonProd
+kind: Config
+preferences: {}
+users:
+- name: arn:aws:eks:eu-central-1:218645542363:cluster/DevOps-NonProd
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1alpha1
+      args:
+      - --region
+      - eu-central-1
+      - eks
+      - get-token
+      - --cluster-name
+      - DevOps-NonProd
+      command: aws
