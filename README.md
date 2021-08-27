@@ -36,7 +36,7 @@ aws_secret_access_key = YYYYYYYY
 
 ```
 
-## Example1: 2-public subnets 
+## Example1: 2 public subnets 
 
 ### Deploying the infrastructure
 
@@ -412,7 +412,7 @@ $ aws cloudformation list-stacks
 }       
 ```
 
-## Example2: 2-public & 2-private subnets + bastion host
+## Example2: 2 public & 2 private subnets + bastion host
 
 Minimal working setup for AWS EKS (Amazon Elastic Kubernetes Service) using AWS CF (Amazon CloudFormation)
 
