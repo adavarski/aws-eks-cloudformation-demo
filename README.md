@@ -340,10 +340,11 @@ Kubernetes Add-ons/YAML templates
 All the templates for additional deployments/daemonsets can be found in [k8s_templates](https://github.com/adavarski/aws-eks-cloudformation-demo/tree/main/k8s_templates).
 
 Note1: To apply templates simply run kubectl apply -f . from a desired folder. Ensure to put in correct Role arn in service accounts configuration. Also, check that environment variables are correct.
+
 Note2: Setup versions regarding k8s versions (1.20/1.21/etc.)
 
 You will find templates for the following Kubernetes components:
-
+```
 ALB ingress controller
 AWS Load Balancer controller
 AWS node termination handler
@@ -362,7 +363,7 @@ Reloader
 Spot Interrupt Handler
 VPC CNI Plugin
 Secrets CSI Driver
-
+```
 
 ### Remove/Clean the infrastructure:
 
