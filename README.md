@@ -401,7 +401,7 @@ $ aws cloudformation list-stacks
         {
             "StackId": "arn:aws:cloudformation:eu-central-1:218645542363:stack/workshop-devops/6e26c8f0-0726-11ec-99f8-0a0e3394becc",
             "StackName": "workshop-devops",
-            "TemplateDescription": "Anastas Davarski / Cloud DevOps AWS EKS demo workshop\n",
+            "TemplateDescription": "A.Davarski / Cloud DevOps AWS EKS demo workshop\n",
             "CreationTime": "2021-08-27T11:03:38.101Z",
             "DeletionTime": "2021-08-27T12:55:32.929Z",
             "StackStatus": "DELETE_COMPLETE",
